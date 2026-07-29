@@ -103,19 +103,13 @@ If `make check` target is successful, developer is good to commit the code to pr
 - runs `conftests`. `conftests` make sure `policy` checks are successful.
 - runs `terratest`. This is integration test suit.
 - runs `opa` tests
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.0 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~>3.67 |
-
-## Providers
-
-| Name | Version |
-|------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 3.116.0 |
 
 ## Modules
 
@@ -131,10 +125,10 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_name"></a> [name](#input\_name) | The name of the secret | `string` | n/a | yes |
-| <a name="input_value"></a> [value](#input\_value) | The value of the secret | `string` | n/a | yes |
-| <a name="input_tags"></a> [tags](#input\_tags) | The tags for the secret | `map(string)` | `{}` | no |
 | <a name="input_key_vault_id"></a> [key\_vault\_id](#input\_key\_vault\_id) | Id of the key vault to which secrets need to be added. | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | The name of the secret | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | The tags for the secret | `map(string)` | `{}` | no |
+| <a name="input_value"></a> [value](#input\_value) | The value of the secret | `string` | n/a | yes |
 
 ## Outputs
 
@@ -142,4 +136,4 @@ No modules.
 |------|-------------|
 | <a name="output_name"></a> [name](#output\_name) | n/a |
 | <a name="output_value"></a> [value](#output\_value) | n/a |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
